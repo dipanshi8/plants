@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #5aab61; /* Nature-inspired green */
+        }
+        .navbar a {
+            color: #fff;
+        }
+        .hero {
+            background: url('nature-hero.jpg') no-repeat center center/cover;
+            color: #000; /* Changed text color to black */
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        #gallery img {
+            width: 100%; /* Ensures consistent image resolution */
+            height: auto;
+        }
+        .footer {
+            background-color: #5aab61;
+            color: white;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Plant World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Plants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#journey">My Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero text-center">
+        <h1>Welcome to the Plant World</h1>
+        <p>Discover the beauty and benefits of various plants from around the world.</p>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Featured Plants</h2>
+            <div class="row">
+                <!-- Aloe Vera -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="aloevera.jpg" class="card-img-top" alt="Aloe Vera">
+                        <div class="card-body">
+                            <h5 class="card-title">Aloe Vera</h5>
+                            <p class="card-text">Aloe Vera is known for its healing properties, especially in skincare. It’s commonly used to treat burns, moisturize skin, and reduce inflammation.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lavender -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="lavender.jpg" class="card-img-top" alt="Lavender">
+                        <div class="card-body">
+                            <h5 class="card-title">Lavender</h5>
+                            <p class="card-text">Lavender is widely used in aromatherapy to reduce stress and anxiety. It also has anti-inflammatory and anti-fungal properties.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tulips -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="tulips.jpg" class="card-img-top" alt="Tulip">
+                        <div class="card-body">
+                            <h5 class="card-title">Tulips</h5>
+                            <p class="card-text">Tulips are beautiful flowers that bloom in the spring. Known for their vibrant colors, they symbolize perfect love and happiness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Journey Section -->
+    <section id="journey" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">My Journey with Plants</h2>
+            <p class="text-center">Plants have been an integral part of my life. From growing a small herb garden in my backyard to exploring the medicinal and aesthetic benefits of various species, every step of this journey has been a learning experience. I hope to share my passion and knowledge with you through Plant World.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Plant Gallery</h2>
+            <div class="row">
+                <!-- Plant Images -->
+                <div class="col-md-4">
+                    <img src="cute.jpg" class="img-fluid" alt="Plant 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="cactus.jpg" class="img-fluid" alt="Cactus">
+                </div>
+                <div class="col-md-4">
+                    <img src="touchmenot.jpg" class="img-fluid" alt="Touch-me-not">
+                </div>
+                <div class="col-md-4">
+                    <img src="sunflower.jpg" class="img-fluid" alt="Sunflower">
+                </div>
+                <div class="col-md-4">
+                    <img src="rose.jpg" class="img-fluid" alt="Rose">
+                </div>
+                <div class="col-md-4">
+                    <img src="perivinkle.jpg" class="img-fluid" alt="Periwinkle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+        <p>&copy; 2024 Plant World | All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
